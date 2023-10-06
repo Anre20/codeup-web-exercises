@@ -16,12 +16,12 @@ alert("Welcome to my Website!")
 //When the exercise asks you to use a number, instead use a prompt to ask the user for that number.
 //Use an alert to show the results of each problem.
 
-//var theLittleMermaidRentPeriod = prompt("How many days will you be renting The Little Mermaid?")
-//console.log(`The user entered: ${theLittleMermaidRentPeriod}`);
-//var brotherBearRentPeriod = prompt("How many days will you be renting Brother Bear?")
-//console.log(`The user entered: ${brotherBearRentPeriod}`);
-//var herculesRentPeriod = prompt("How many days will you be renting Hercules?")
-//console.log(`The user entered: ${herculesRentPeriod}`);
+var theLittleMermaidRentPeriod = prompt("How many days will you be renting The Little Mermaid?")
+console.log(`The user entered: ${theLittleMermaidRentPeriod}`);
+var brotherBearRentPeriod = prompt("How many days will you be renting Brother Bear?")
+console.log(`The user entered: ${brotherBearRentPeriod}`);
+var herculesRentPeriod = prompt("How many days will you be renting Hercules?")
+console.log(`The user entered: ${herculesRentPeriod}`);
 //
 //const pricePerMoviePerDay = 3
 //
