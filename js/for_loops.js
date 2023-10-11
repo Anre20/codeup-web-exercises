@@ -23,3 +23,12 @@
 //     }
 // }
 
+// Exercise for Loops #4
+// const numberPyramid = (num) => {
+//     for(let i = 1; i ,= num; i++){
+//         const message = i.toString.repeat
+//     }
+
+// const countDownBy5 = () => {
+//     for(let i = num; i > 0)
+// }
