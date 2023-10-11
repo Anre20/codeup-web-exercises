@@ -29,21 +29,21 @@
 // */
 //
 
-//var analyzeColor = prompt("What's your favorite color?").toLowerCase()
+// var analyzeColor = prompt("What's your favorite color?").toLowerCase()
 //
-//if (analyzeColor === 'red')
-//	alert("Strawberries are red");
+// if (analyzeColor === 'red')
+// 	alert("Strawberries are red");
 // else if (analyzeColor === 'orange') {
-//	alert("Oranges are orange");
-//} else if (analyzeColor === 'yellow') {
-//	alert("bananas are yellow");
-//} else if (analyzeColor === 'green') {
-//	alert("grass is green");
-//} else if (analyzeColor === 'blue') {
-//	alert("the ocean is blue");
-//} else {
-//	alert("I don't know anything by that color");
-//}
+// 	alert("Oranges are orange");
+// } else if (analyzeColor === 'yellow') {
+// 	alert("bananas are yellow");
+// } else if (analyzeColor === 'green') {
+// 	alert("grass is green");
+// } else if (analyzeColor === 'blue') {
+// 	alert("the ocean is blue");
+// } else {
+// 	alert("I don't know anything by that color");
+// }
 
 //// Don't change the next two lines!
 // These lines create two variables for you:
@@ -62,8 +62,8 @@
 // * TODO:
 // * Comment out the code above, and refactor your function to use a switch-case statement
 // */
-//var colors = prompt("What's your favorite color?").toLowerCase()
-//switch(colors) {
+// var colors = prompt("What's your favorite color?").toLowerCase()
+// switch(colors) {
 //    case "blue":
 //    alert("The ocean is blue")
 //    break;
@@ -104,27 +104,28 @@
 // *
 
 
-//var analyzeColor = prompt("What's your favorite color?").toLowerCase()
-//function getRandomInt(max) {
-//return Math.floor(Math.random() * max)
-//}
-//let calculateTotal = getRandomInt(6);
-//if (calculateTotal === 0)
-//	alert("Unfortunately, you did not receive a discount");
-// else if (calculateTotal === 1) {
-//	alert("Congratulations! You have received a 10% discount!");
-//} else if (calculateTotal === 2) {
-//	alert("Congratulations! You have received a 25% discount!");
-//} else if (calculateTotal === 3) {
-//	alert("Congratulations! You have received a 35% discount!");
-//} else if (calculateTotal === 4) {
-//	alert("Congratulations! You have received a 50% discount!");
-//} else if (calculateTotal === 5) {
-//    alert("Congratulations! You will get everything for free!");
-//} else {
-//	alert("error");
-//
-//}
+
+// const getRandomInt = (max) => {
+// return Math.floor(Math.random() * max)
+// }
+// let calculateTotal = getRandomInt(6);
+// if (calculateTotal === 0)
+// 	alert("Unfortunately, you did not receive a discount");
+//  else if (calculateTotal === 1) {
+// 	alert("Congratulations! You have received a 10% discount!");
+// } else if (calculateTotal === 2) {
+// 	alert("Congratulations! You have received a 25% discount!");
+// } else if (calculateTotal === 3) {
+// 	alert("Congratulations! You have received a 35% discount!");
+// } else if (calculateTotal === 4) {
+// 	alert("Congratulations! You have received a 50% discount!");
+// } else if (calculateTotal === 5) {
+//     alert("Congratulations! You will get everything for free!");
+// } else {
+// 	alert("error");
+// 	}
+
+
 
 // * Example:
 // * calculateTotal(0, 100) // returns 100
@@ -146,45 +147,45 @@
 //// Generate a random number between 0 and 6
 //// const luckyNumber = Math.floor(Math.random() * 6);
 //
-//var billTotal = prompt("What's your bill total?")
-//function getRandomInt(max) {
-//return Math.floor(Math.random() * max)
-//}
-//let calculateTotal = getRandomInt(6);
-//if (isNaN(billTotal)) {
-//   alert(`Please insert your bill total correctly (in digits)`);
+// var billTotal = prompt("What's your bill total?")
+// const getRandomInt = (max) => {
+// return Math.floor(Math.random() * max)
+// }
+// let calculateTotal = getRandomInt(6);
+// if (isNaN(billTotal)) {
+//    alert(`Please insert your bill total correctly (in digits)`);
 //
-//} else if (calculateTotal === 0) {
-//	alert(`Your lucky number was 0, this does not apply a discount`);
-//    alert(`Your total before the discount was ${billTotal.toLocaleString("en-US", {style:"currency", currency:"USD"})}`);
-//    alert(`Your grand total after the discount is $${billTotal.toLocaleString("en-US", {style:"currency", currency:"USD"})}`);
-//} else if (calculateTotal === 1) {
-//	alert(`Your lucky number was 1, this applies a 10% discount!`);
-//	alert(`Your total before the discount was $${billTotal.toLocaleString("en-US", {style:"currency", currency:"USD"})}`);
-//	alert(`Your grand total after the discount is ${((billTotal) - (billTotal * .10)).toLocaleString("en-US", {style:"currency", currency:"USD"})}`);
-//} else if (calculateTotal === 2) {
-//	alert(`Your lucky number was 2, this applies a 25% discount!`);
-//	alert(`Your total before the discount was $${billTotal.toLocaleString("en-US", {style:"currency", currency:"USD"})}`);
-//    alert(`Your grand total after the discount is ${((billTotal) - (billTotal * .25)).toLocaleString("en-US", {style:"currency", currency:"USD"})}`);
+// } else if (calculateTotal === 0) {
+// 	alert(`Your lucky number was 0, this does not apply a discount`);
+//     alert(`Your total before the discount was ${billTotal.toLocaleString("en-US", {style:"currency", currency:"USD"})}`);
+//     alert(`Your grand total after the discount is $${billTotal.toLocaleString("en-US", {style:"currency", currency:"USD"})}`);
+// } else if (calculateTotal === 1) {
+// 	alert(`Your lucky number was 1, this applies a 10% discount!`);
+// 	alert(`Your total before the discount was $${billTotal.toLocaleString("en-US", {style:"currency", currency:"USD"})}`);
+// 	alert(`Your grand total after the discount is ${((billTotal) - (billTotal * .10)).toLocaleString("en-US", {style:"currency", currency:"USD"})}`);
+// } else if (calculateTotal === 2) {
+// 	alert(`Your lucky number was 2, this applies a 25% discount!`);
+// 	alert(`Your total before the discount was $${billTotal.toLocaleString("en-US", {style:"currency", currency:"USD"})}`);
+//     alert(`Your grand total after the discount is ${((billTotal) - (billTotal * .25)).toLocaleString("en-US", {style:"currency", currency:"USD"})}`);
 //
-//} else if (calculateTotal === 3) {
-//	alert(`Your lucky number was 3, this applies a 35% discount!`);
-//	alert(`Your total before the discount was $${billTotal.toLocaleString("en-US", {style:"currency", currency:"USD"})}`);
-//    alert(`Your grand total after the discount is ${((billTotal) - (billTotal * .35)).toLocaleString("en-US", {style:"currency", currency:"USD"})}`);
+// } else if (calculateTotal === 3) {
+// 	alert(`Your lucky number was 3, this applies a 35% discount!`);
+// 	alert(`Your total before the discount was $${billTotal.toLocaleString("en-US", {style:"currency", currency:"USD"})}`);
+//     alert(`Your grand total after the discount is ${((billTotal) - (billTotal * .35)).toLocaleString("en-US", {style:"currency", currency:"USD"})}`);
 //
-//} else if (calculateTotal === 4) {
-//	alert(`Your lucky number was 4, this applies a $50 discount!`);
-//	alert(`Your total before the discount was $${billTotal.toLocaleString("en-US", {style:"currency", currency:"USD"})}`);
-//    alert(`Your grand total after the discount is ${((billTotal) - (billTotal * .50)).toLocaleString("en-US", {style:"currency", currency:"USD"})}`);
+// } else if (calculateTotal === 4) {
+// 	alert(`Your lucky number was 4, this applies a $50 discount!`);
+// 	alert(`Your total before the discount was $${billTotal.toLocaleString("en-US", {style:"currency", currency:"USD"})}`);
+//     alert(`Your grand total after the discount is ${((billTotal) - (billTotal * .50)).toLocaleString("en-US", {style:"currency", currency:"USD"})}`);
 //
-//} else if (calculateTotal === 5) {
-//    alert(`Your lucky number was 5, this applies a 100% discount!`);
-//    alert(`Your total before the discount was $${billTotal.toLocaleString("en-US", {style:"currency", currency:"USD"})}`);
-//    alert(`That means everything is free and your grand total after the discount is $0!`);
-// } else {
-//	alert("error");
+// } else if (calculateTotal === 5) {
+//     alert(`Your lucky number was 5, this applies a 100% discount!`);
+//     alert(`Your total before the discount was $${billTotal.toLocaleString("en-US", {style:"currency", currency:"USD"})}`);
+//     alert(`That means everything is free and your grand total after the discount is $0!`);
+//  } else {
+// 	alert("error");
 //
-//}
+// }
 
 ///**
 // * TODO:
@@ -202,7 +203,7 @@
 // *
 if (window.confirm("Would you like to enter a number?")) {
 var numGiven = prompt("Please enter a number")
-var numPlusOneHundred = (parseInt(numGiven) + 100)
+var numPlusOneHundred = (parseFloat(numGiven) + 100)
 if (isNaN(numGiven)) {
     alert(`Please insert your number in digits`); }
 else if (numGiven % 2 == 0) {
@@ -211,7 +212,7 @@ alert("Your number plus 100 is " + numPlusOneHundred) }
 else if (numGiven % 2 !== 0) {
 alert(`Your number is odd`)
 alert("Your number plus 100 is " + numPlusOneHundred) }
-if (parseInt(numGiven) > 0)
+if (parseInt(numGiven) >= 0)
 alert("Your number is positive");
 else if (parseInt(numGiven) < 0)
 alert("Your number is negative");
