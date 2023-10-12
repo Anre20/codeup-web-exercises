@@ -17,7 +17,7 @@ const names = ["Anre", "Peter", "Jessica", "Emily"];
     }
     names.forEach((name, index) => {
         console.log(name)
-
+console.log(nmrOfNames)
     });
 
 console.log(lastName)
