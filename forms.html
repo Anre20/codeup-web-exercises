@@ -6,12 +6,12 @@
 </head>
 <body>
 <form method="POST" action="https://request-inspector.glitch.me/">
-    <label for="username">Username</label>
-    <input id="username" name="username" type="text" />
+    <label for="email">Email</label>
+    <input id="email" name="email" type="text" required/>
     <br />
 
     <label for="password">Password</label>
-    <input id="password" name="password" type="password" />
+    <input id="password" name="password" type="password" required/>
     <br />
 
     <input type="submit" />
@@ -19,17 +19,17 @@
     <button type="submit">Login</button>
 </form>
 <br>
-<textarea name="bio"></textarea>
+<textarea name="bio" placeholder="Tell us about yourself"></textarea>
 <br>
-<label
-<p>How did you hear about us?:</p>
-<input type="radio" id=ad1 name="ad" value="Billboard">
+<label>
+<h1>How did you hear about us?:</h1>
+<input type="checkbox" id=ad1 name="ad" value="Billboard">
 <label for="ad1">Billboard</label><br>
-<input type="radio" id="ad2" name="ad" value="Radio Advertisement">
+<input type="checkbox" id="ad2" name="ad" value="Radio Advertisement">
 <label for="ad2">Radio Advertisement</label><br>
-<input type="radio" id="ad3" name="ad" value="Internet Advertisement">
+<input type="checkbox" id="ad3" name="ad" value="Internet Advertisement">
 <label for="ad3">Internet Advertisement</label><br>
-<input type="radio" id="ad4" name="ad" value="Other">
+<input type="checkbox" id="ad4" name="ad" value="Other">
 <label for="ad4">Other</label><br><br>
 <input type="submit" value="Submit">
 <br>
@@ -37,7 +37,8 @@
 <select name="Web Browser">
     <option value="Firefox">Firefox</option>
     <option value="Chrome">Chrome</option>
-    <option value="Internet Explorer">Internet Explorer</option>
+    <option value="Safari">Internet Explorer</option>
+    <option value="Other">Other</option>
     <input type="submit" value="Submit">
 </select>
 </label>
