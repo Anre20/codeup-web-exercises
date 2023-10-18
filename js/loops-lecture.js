@@ -17,7 +17,7 @@
 /
 
 //write a function called buildPyramid that takes a number as an argument.
-//the function should return an asterisk pyramid that has as many tows as the number.
+//the function should return an asterisk pyramid that has as many rows as the number.
 // const buildRow = (num) => {
 //     let result = ""
 //     for(let i = 0; i < num; i++){
