@@ -1,0 +1,80 @@
+/*CSS Variables*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --clr-primary: 4e5d33;
+    --clr-secondary: FFC10C;
+    --clr-secondary-light:
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, {
+    font-family: "Lobster", script;
+}
+
+
+
+a {
+    color: inherit;
+    text-decoration: unset;
+}
+
+.row {
+    width: 100%;
+max-width: 110px;
+background-color: transparent;
+}
+
+#page-header {
+    border-bottom: 1px solid #e5e5e5;
+
+}
+
+header img {
+    width: 150px;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    font-weight: 600;
+
+}
+
+nav > ul > li {
+    padding: 10px 20px;
+
+}
+
+nav > ul > li > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.container.hero {
+    min-height; 70dvh;
+    background-color: green;
+    background-image: url("../img/pexels-fox-1595385.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.btn {
+    background-color: var(--clr-secondary)
+    padding: 10px 20px
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    transition: background-color all ease 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--clr-secondary-light);
+}
