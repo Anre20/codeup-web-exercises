@@ -5,18 +5,17 @@
 // Function to implement FizzBuzz for a given range
 const fizzBuzz = (start, end) => {
     for (let i = start; i <= end; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-        console.log("FizzBuzz");
-    } else if (i % 3 === 0) {
-        console.log("Fizz");
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log("FizzBuzz");
+        } else if (i % 3 === 0) {
+            console.log("Fizz");
 
-    } else if (i % 5 === 0) {
-        console.log("Buzz");
-    } else {
-        console.log(i);
-        fizzBuzz(1, 100);
+        } else if (i % 5 === 0) {
+            console.log("Buzz");
+        } else {
+            console.log(i);
+        }
     }
-}
 
     // Write your FizzBuzz logic here
     // Loop through numbers from start to end
@@ -26,5 +25,7 @@ const fizzBuzz = (start, end) => {
     // console.log "Buzz" if it is divisible by 5
     // If the number is not divisible by 3 or 5, console.log the number itself
 };
+
+fizzBuzz(1, 100);
 
 // Call the function to perform FizzBuzz for a specific range
