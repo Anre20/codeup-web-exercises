@@ -1,0 +1,16 @@
+@import "position-lecture-base.css";
+
+/* This is the file we will use to experiment with position */
+.container {
+  position: static;
+    overflow: scroll;
+}
+
+#item-1 {
+  position: sticky;
+ top: 0px;
+}
+
+#item-1 span {
+  display: none;
+}
