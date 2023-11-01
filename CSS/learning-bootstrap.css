@@ -1,0 +1,22 @@
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+.container#test .row{
+    min-height: 30px;
+    background-color: peachpuff;
+}
+
+.container#test .col{
+    border: 1px solid red;
+}
+
+@layer framework {
+    #test .btn {
+        padding50%;
+    }
+
+    
+}
