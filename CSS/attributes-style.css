@@ -37,3 +37,13 @@
 #toggle-btn:hover {
     background-color: #0056b3;
 }
+
+#color {
+    text-decoration-color: #33ff57;
+    font-size: large;
+}
+
+.profile-desc {
+    color: #33ff57;
+    font-family: bold;
+}
