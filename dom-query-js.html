@@ -19,7 +19,7 @@
     <li data-dbid="5">Item 5</li>
 </ul>
 <h2 id="sub-header">Hello Again.</h2>
-<p class="sub-paragraph">
+<p id="sub-paragraph">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
     ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -64,40 +64,64 @@
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
         // subParagraphs[0].innerText = "Mission Accomplished";
 
-        const button1 = document.getElementById("btn1");
-        const changeMainHeader = () => {
-            const mainHeader = document.querySelector('#main-header');
-            mainHeader.textContent = "JavaScript is cool"
+        // const button1 = document.getElementById("btn1");
+        // const changeMainHeader = () => {
+        //     const mainHeader = document.querySelector('#main-header');
+        //     mainHeader.textContent = "JavaScript is cool"
+        //
+        // }
+        // button1.addEventListener('click', changeMainHeader);
+        //
+        //
+        // const button2 = document.getElementById("btn2");
+        // const firstItemBlue = () => {
+        //     const firstItem = document.querySelector('li[data-dbid="1"]');
+        //     document.querySelector(`li[data-dbid="1"]`).style.color = "blue";
+        //
+        //
+        // }
+        // button2.addEventListener('click', firstItemBlue);
+        //
+        // const button3 = document.getElementById("btn3");
+        // const changeSubHeaderColor = () => {
+        //     const subHeader = document.querySelector('#sub-header');
+        //     subHeader.style.color = "blue"
+        //
+        // }
+        // button3.addEventListener('click', changeSubHeaderColor);
+        //
+        // const button4 = document.getElementById("btn4");
+        // const changeSubText = () => {
+        //     const subText = document.querySelector('#sub-header');
+        //     subParagraphs[0].innerText = "Mission Accomplished";
+        //
+        // }
+        // button4.addEventListener('click', changeSubText);
 
+
+        const changeBackgroundColor = () => {
+            const backgroundColor = document.querySelector('#main-header');
+            mainHeader.style.backgroundColor = "green"
         }
-        button1.addEventListener('click', changeMainHeader);
+        document.querySelector('#main-header').addEventListener("click", changeBackgroundColor);
 
 
-        const button2 = document.getElementById("btn2");
-        const firstItemBlue = () => {
-            const firstItem = document.querySelector('li[data-dbid="1"]');
-            document.querySelector(`li[data-dbid="1"]`).style.color = "blue";
-
-
+        const changeFontSize = () => {
+            const fontSize = document.querySelector('#sub-paragraph');
+            fontSize.style.fontSize = "18px";
         }
-        button2.addEventListener('click', firstItemBlue);
+        document.querySelector('#sub-paragraph').addEventListener('dblclick', changeFontSize);
 
-        const button3 = document.getElementById("btn3");
-        const changeSubHeaderColor = () => {
-            const subHeader = document.querySelector('#sub-header');
-            subHeader.style.color = "blue"
 
+        // const changeFontColor = () => {
+        //     const fontColor = document.querySelector('#ul');
+        //     fontColor.style.fontcolor = "blue";
+        // }
+        // document.querySelector('#ul').addEventListener('mouseenter', changeFontColor);
+
+        for (let listItem of listItems) {
+            listItem.addEventListener('mouseenter')
         }
-        button3.addEventListener('click', changeSubHeaderColor);
-
-        const button4 = document.getElementById("btn4");
-        const changeSubText = () => {
-            const subText = document.querySelector('#sub-header');
-            subParagraphs[0].innerText = "Mission Accomplished";
-
-        }
-        button4.addEventListener('click', changeSubText);
-
 
 </script>
 </body>
