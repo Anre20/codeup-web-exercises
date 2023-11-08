@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>DOM: Query and Modify</title>
+    <button id="btn1">Click Me!</button>
+    <button id="btn2">Click Me!</button>
+    <button id="btn3">Click Me!</button>
+    <button id="btn4">Click Me!</button>
 </head>
 <body>
 
@@ -30,35 +34,70 @@
        const mainHeader = document.querySelector('#main-header');
 
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-        mainHeader.innerHTML = "JavaScript is Cool";
+        // mainHeader.innerHTML = "JavaScript is Cool";
 
         // TODO: Uncomment the next line and get the sub header element by id
        const subHeader = document.querySelector('#sub-header');
 
         // TODO: Set the text color of subHeader to blue
-        subHeader.style.color = "blue"
+        // subHeader.style.color = "blue"
 
         // TODO: Uncomment the next line and get all list items
         const listItems = document.querySelectorAll("li");
 
         // TODO: Set text color on every other list item to grey
-
+        //
         // listItems.forEach(listItem, index) => {
         //     if (index % 2 !== 0) {
         //         listItem.style.color = "grey"
         //
         //     }
-        // };
+        // });
 
         // TODO: Set text color of li with dbid = 1 to blue
-        document.querySelector(`li[data-dbid="1"]`).style.color = "blue";
+        // document.querySelector(`li[data-dbid="1"]`).style.color = "blue";
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
         const subParagraphs = document.querySelectorAll(".sub-paragraph");
 
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-        subParagraphs[0].innerText = "Mission Accomplished"
+        // subParagraphs[0].innerText = "Mission Accomplished";
+
+        const button1 = document.getElementById("btn1");
+        const changeMainHeader = () => {
+            const mainHeader = document.querySelector('#main-header');
+            mainHeader.textContent = "JavaScript is cool"
+
+        }
+        button1.addEventListener('click', changeMainHeader);
+
+
+        const button2 = document.getElementById("btn2");
+        const firstItemBlue = () => {
+            const firstItem = document.querySelector('li[data-dbid="1"]');
+            document.querySelector(`li[data-dbid="1"]`).style.color = "blue";
+
+
+        }
+        button2.addEventListener('click', firstItemBlue);
+
+        const button3 = document.getElementById("btn3");
+        const changeSubHeaderColor = () => {
+            const subHeader = document.querySelector('#sub-header');
+            subHeader.style.color = "blue"
+
+        }
+        button3.addEventListener('click', changeSubHeaderColor);
+
+        const button4 = document.getElementById("btn4");
+        const changeSubText = () => {
+            const subText = document.querySelector('#sub-header');
+            subParagraphs[0].innerText = "Mission Accomplished";
+
+        }
+        button4.addEventListener('click', changeSubText);
+
 
 </script>
 </body>
