@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Konami Code</title>
+</head>
+<body>
+<h1>Konami Code</h1>
+<p><strong>Remember when Konami made games?</p>
+
+<script>
+
+const konamiCode = ["ArrowUp",  "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a", "Enter"]
+let codeEntered = []
+document.addEventListener("keyup", event => {
+  console.log(event.key);
+  codeEntered.push(event.key);
+
+if (codeEntered.length === konamiCode.length) {
+  let correctCode = true;
+  for (let i = 0; i < codeEntered.length; i++) {
+  if (codeEntered[i] !== konamiCode[i]) {
+  correctCode = false;
+  break;
+}
+}
+if (correctCode) {
+  alert("You have 30 additional lives");
+  codeEntered = [];
+} else {
+  codeEntered = [];
+}
+}
+});
+</script>
+</body>
+<img src="img/metal_gear_solid2_015.jpg.crdownload">
+</html>
