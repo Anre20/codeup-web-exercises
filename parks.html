@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parks</title>
+
+</head>
+<body>
+
+<h1>National Parks FAQ</h1>
+
+<ul><h3 id="header1">Zion National Park</h3>
+    <li>One of the main sites within the park is the impressive Zion Canyon – this natural landmark is 15 miles long and has a beautiful coloration from the Navajo Sandstone.</li>
+    <li>Notable landmarks within the park aside from the canyon include the Kolob Canyons, The Three Patriarchs, Horse Ranch Mountain and the Twin Brothers peaks.</li>
+    <li>The infrastructure within this park is fantastic and there is a tram line used for transportation and a plethora of information offices and ranches.</li>
+    <li>although this relatively small park only covers an area of 147,242 acres, it is one of the most visited in the state and has some fantastic attractions and features.</li>
+</ul>
+<br>
+<ul><h3 id="header2">Yellowstone National Park</h3>
+    <li>Yellowstone is famous for its epic super volcano system and geyser that is lovingly named “Old Faithful”. Old Faithful erupts like clockwork every 91 minutes and this is a major attraction within the park.</li>
+    <li>Aside from the volcanic landscapes, Yellowstone also has a varied ecosystem including vast meadows, pine forests and mountains.</li>
+    <li>This park is undoubtedly the main attraction in Wyoming and the visitors center and facilities are second to none.</li>
+    <li>Yellowstone is also the home of Grand Prismatic Spring and the Excelsior Geyser Crater.</li>
+</ul>
+<br>
+<ul><h3 id="header3">The Grand Canyon</h3>
+    <li>The Grand Canyon is one of the most well-known and renowned natural landmarks in the world</li>
+    <li>This is the largest canyon in existence and covers an area of 1.2 million acres in the northern region of Arizona.</li>
+    <li>This epic canyon has been formed over millions of years and was crafted by the Colorado River – indeed the river still runs through the canyon today.</li>
+    <li>Millions of visitors travel to the Grand Canyon every year and it is easy to see why – the enormity of this region is breath-taking and the views from the Northern and Southern Rims are simply superb.</li>
+</ul>
+<br>
+
+<button id="changeColorButton">Change Background Color</button>
+
+<script>
+    function changeBackgroundColor() {
+      const ulList = document.querySelectorAll('ul');
+
+      ulList.forEach((ul) => {
+        const lastLi = ul.lastElementChild;
+
+        lastLi.style.backgroundColor = 'yellow';
+      });
+    }
+    const changeColorButton = document.getElementById('changeColorButton');
+    changeColorButton.addEventListener('click', changeBackgroundColor);
+</script>
+
+<script>
+    function changeFontWeight() {
+    const fontWeight = document.querySelectorAll('#header1').children;
+        for(let i = 0; i < li.length; i++) {
+        fontWeight.style.fontSize = "58px";
+}
+    document.querySelector('#header1').addEventListener('click', changeFontWeight);}
+
+</script>
+
+
+<dl>
+    <dt>How many people visit the national parks?</dt>
+    <dd>Total recreation visitors to the national parks in 2018: 318,211,833.</dd>
+
+    <dt>How old is the National Park System?</dt>
+    <dd>The National Park Service was created by an act signed by President Woodrow Wilson on August 25, 1916.</dd>
+
+    <dt>How many employees are in the National Park Service?</dt>
+    <dd>Permanent, temporary, and seasonal employees: More than 20,000</dd>
+
+    <dt>What is the origin of the National Park Service arrowhead?</dt>
+    <dd>The arrowhead was authorized as the official National Park Service emblem by the Secretary of the Interior on July 20, 1951.</dd>
+
+    <dt>How many areas are in the National Park System?</dt>
+    <dd>The system includes 419 areas covering more than 85 million acres in every state, the District of Columbia, American Samoa, Guam, Puerto Rico, and the Virgin Islands.</dd>
+
+    <dt>What is the largest national park site?</dt>
+    <dd>Wrangell-St. Elias National Park and Preserve, AK, at 13.2 million acres.</dd>
+
+    <dt>What is the National Park Service budget?</dt>
+    <dd>Fiscal Year (FY) 2014 Enacted: $2.98 billion.</dd>
+
+    <dt>Can I bring my pet to a national park?</dt>
+    <dd>Some national parks welcome pets—in developed areas, on many trails and campgrounds, and in some lodging facilities.</dd>
+
+    <dt>How do I apply for a job with the National Park Service?</dt>
+    <dd>National Park Service jobs, including both permanent and seasonal positions, are listed on USAJOBs.</dd>
+
+    <dt>What do I need to know about driving off road in national parks?</dt>
+    <dd>Before you head out, check with the national parks that you intend to visit. In many national parks, off-road driving is illegal. Where off-road driving is allowed, the National Park Service regulates it.</dd>
+</dl>
+
+</body>
+</html>
