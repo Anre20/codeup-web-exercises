@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Map Project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css">
+    <link rel="stylesheet" href="CSS/weather_map.css">
+</head>
+
+<body>
+<body onload="DefaultScreen()">
+<div style="text-align: center;">
+    <h1 id="Para1">Weather Forecast</h1>
+    <p id="inputContainer">City: <input type="text" id="cityInput"></p>
+    <button type="button" onclick="GetInfo()">Click Me</button>
+    <h2 id="cityName">---San Antonio---</h2>
+</div>
+
+<div id = "weatherContainer">
+    <div id="iconsContainer">
+        <div class = "icons">
+            <p class="weather" id="day1"></p>
+            <div class="image"><img src="dots.png" class="imgClass" id="img1"></div>
+            <p class="minValues" id="day1Min">Loading...</p>
+        </div>
+        <div class = "icons">
+            <p class="weather" id="day2"></p>
+            <div class="image"><img src="dots.png" class="imgClass" id="img2"></div>
+            <p class="minValues" id="day2Min">Loading...</p>
+        </div>
+        <div class = "icons">
+            <p class="weather" id="day3"></p>
+            <div class="image"><img src="dots.png" class="imgClass" id="img3"></div>
+            <p class="minValues" id="day3Min">Loading...</p>
+        </div>
+        <div class = "icons">
+            <p class="weather" id="day4"></p>
+            <div class="image"><img src="dots.png" class="imgClass" id="img4"></div>
+            <p class="minValues" id="day4Min">Loading...</p>
+        </div>
+        <div class = "icons">
+            <p class="weather" id="day5"></p>
+            <div class="image"><img src="dots.png" class="imgClass" id="img5"></div>
+            <p class="minValues" id="day5Min">Loading...</p>
+        </div>
+    </div>
+</div>
+</body>
+
+    <div id="map" class="container-fluid flex-grow-1 p-0 mt-4" style="height: 800px;"></div>
+</div>
+
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+<script type="module" src="./js/weather_map.js"></script>
+
+</body>
+
+</html>

@@ -1,6 +1,6 @@
 import {keys} from "./keys.js";
 
-const getCoordinates = async (searchText) => {
+export const getCoordinates = async (searchText) => {
     searchText = encodeURIComponent(searchText);
     const url =`https://api.mapbox.com/geocoding/v5/{endpoint}/{search_text}.json?access_token=${keys.mapbox}`;
     const options = {
